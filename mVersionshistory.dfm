@@ -20,6 +20,15 @@ object Versionshistory: TVersionshistory
     Width = 265
     Height = 345
     Lines.Strings = (
+      '1.1.3.0'
+      '-NEU: Mini-Taschenrechner - Zahlensysteme'
+      '-IMPROVED: Mini-Taschenrechner'
+      '-IMPROVED: Optionen - Button'
+      '-IMPROVED: Code allgemein'
+      '-IMPROVED: Info'
+      '-IMPROVED: Men'#252
+      '-FIXED: MehrZahlenRechner'
+      ''
       '1.1.2.1'
       '-IMPROVED: Info'
       ''

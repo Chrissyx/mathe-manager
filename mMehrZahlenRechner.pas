@@ -67,8 +67,7 @@ begin
    edErgebnis.text := FloatToStr (S);
 end;
 
-procedure TMehrZahlenRechner.onclose(Sender: TObject;
-  var Action: TCloseAction);
+procedure TMehrZahlenRechner.onclose(Sender: TObject; var Action: TCloseAction);
 begin
    MatheManager.StatusBar1.SimpleText := 'Bereit.';
 end;

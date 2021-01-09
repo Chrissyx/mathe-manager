@@ -38,7 +38,6 @@ type
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
-    url: string;
     klick: boolean;
   public
     { Public declarations }
@@ -59,27 +58,24 @@ begin
    close;
 end;
 
-procedure TAboutBox.onclose(Sender: TObject; var Action: TCloseAction);
+procedure TAboutBox.OnClose(Sender: TObject; var Action: TCloseAction);
 begin
    MatheManager.StatusBar1.SimpleText := 'Bereit.';
 end;
 
 procedure TAboutBox.Label1Click(Sender: TObject);
 begin
-   url := 'http://www.chrissyx.de.vu/';
-   shellexecute(handle, 'open', PChar(url), NIL, NIL, SW_SHOW);
+   ShellExecute(handle, 'open', 'http://www.chrissyx.de.vu/', NIL, NIL, SW_SHOW);
 end;
 
 procedure TAboutBox.Label2Click(Sender: TObject);
 begin
-   url := 'http://www.chrissyx.com/';
-   shellexecute(handle, 'open', PChar(url), NIL, NIL, SW_SHOW);
+   ShellExecute(handle, 'open', 'http://www.chrissyx.com/', NIL, NIL, SW_SHOW);
 end;
 
 procedure TAboutBox.Label4Click(Sender: TObject);
 begin
-   url := 'http://www.mathe-manager.de.vu/';
-   shellexecute(handle, 'open', PChar(url), NIL, NIL, SW_SHOW);
+   ShellExecute(handle, 'open', 'http://www.mathe-manager.de.vu/', NIL, NIL, SW_SHOW);
 end;
 
 procedure TAboutBox.btSpeicherClick(Sender: TObject);
@@ -117,4 +113,3 @@ begin
 end;
 
 end.
-

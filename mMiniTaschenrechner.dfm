@@ -2,21 +2,22 @@ object MiniTaschenrechner: TMiniTaschenrechner
   Left = 60
   Top = 110
   Width = 210
-  Height = 250
+  Height = 270
   Caption = 'Mathe Manager - Mini-Taschenrechner'
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
+  Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
-  Font.Name = 'MS Sans Serif'
+  Font.Name = 'Arial'
   Font.Style = []
   OldCreateOrder = False
   OnClose = onclose
+  OnShow = FormShow
   PixelsPerInch = 96
-  TextHeight = 13
-  object Label1: TLabel
+  TextHeight = 14
+  object lbErgebnis: TLabel
     Left = 8
-    Top = 176
+    Top = 196
     Width = 81
     Height = 22
     Caption = 'Ergebnis:'
@@ -35,7 +36,7 @@ object MiniTaschenrechner: TMiniTaschenrechner
     Caption = '/'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -50,7 +51,7 @@ object MiniTaschenrechner: TMiniTaschenrechner
     Caption = '*'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -65,7 +66,7 @@ object MiniTaschenrechner: TMiniTaschenrechner
     Caption = '-'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -80,7 +81,7 @@ object MiniTaschenrechner: TMiniTaschenrechner
     Caption = '+'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -95,7 +96,7 @@ object MiniTaschenrechner: TMiniTaschenrechner
     Caption = 'SQRT'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -110,7 +111,7 @@ object MiniTaschenrechner: TMiniTaschenrechner
     Caption = #178
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -121,7 +122,13 @@ object MiniTaschenrechner: TMiniTaschenrechner
     Left = 8
     Top = 8
     Width = 185
-    Height = 21
+    Height = 22
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 6
     Text = '4'
   end
@@ -129,18 +136,30 @@ object MiniTaschenrechner: TMiniTaschenrechner
     Left = 8
     Top = 40
     Width = 185
-    Height = 21
+    Height = 22
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 7
     Text = '5'
   end
   object edErgebnis: TEdit
     Left = 8
-    Top = 200
+    Top = 220
     Width = 185
-    Height = 21
+    Height = 22
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 8
   end
-  object Button1: TButton
+  object btXhochY: TButton
     Left = 104
     Top = 120
     Width = 41
@@ -148,11 +167,71 @@ object MiniTaschenrechner: TMiniTaschenrechner
     Caption = 'x^y'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
     TabOrder = 9
-    OnClick = Button1Click
+    OnClick = btXhochYClick
+  end
+  object btConvert: TButton
+    Left = 152
+    Top = 120
+    Width = 42
+    Height = 41
+    Caption = 'CONV'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+    OnClick = btConvertClick
+  end
+  object radioDual: TRadioButton
+    Left = 8
+    Top = 168
+    Width = 49
+    Height = 17
+    Caption = 'Dual'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    OnClick = radioDualClick
+  end
+  object radioOkt: TRadioButton
+    Left = 61
+    Top = 168
+    Width = 57
+    Height = 17
+    Caption = 'Oktal'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 12
+    OnClick = radioOktClick
+  end
+  object radioHex: TRadioButton
+    Left = 120
+    Top = 168
+    Width = 73
+    Height = 17
+    Caption = 'Hexadez'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 13
+    OnClick = radioHexClick
   end
 end

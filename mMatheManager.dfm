@@ -2,7 +2,7 @@ object MatheManager: TMatheManager
   Left = 0
   Top = 0
   Width = 199
-  Height = 104
+  Height = 103
   Caption = 'Mathe Manager'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -12,6 +12,7 @@ object MatheManager: TMatheManager
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
+  Position = poDesigned
   OnCloseQuery = onclosequery
   OnShow = onshow
   PixelsPerInch = 96
@@ -31,7 +32,7 @@ object MatheManager: TMatheManager
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 39
+    Top = 38
     Width = 191
     Height = 19
     Panels = <>
@@ -45,6 +46,9 @@ object MatheManager: TMatheManager
       object Optionen1: TMenuItem
         Caption = 'Optionen...'
         OnClick = Optionen1Click
+      end
+      object N1: TMenuItem
+        Caption = '-'
       end
       object Beenden1: TMenuItem
         Caption = 'Beenden'
@@ -156,8 +160,8 @@ object MatheManager: TMatheManager
     end
   end
   object IdHTTP1: TIdHTTP
-    MaxLineAction = maException
-    ReadTimeout = 0
+    AuthRetries = 0
+    AuthProxyRetries = 0
     AllowCookies = True
     ProxyParams.BasicAuthentication = False
     ProxyParams.ProxyPort = 0

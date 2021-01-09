@@ -43,7 +43,7 @@ object MehrZahlenRechner: TMehrZahlenRechner
     Top = 96
     Width = 185
     Height = 49
-    Caption = 'Produkt aller Zahlen bis... (Fakult'#228't'
+    Caption = 'Produkt aller Zahlen bis... (Fakult'#228't)'
     TabOrder = 3
     OnClick = btProduktClick
   end

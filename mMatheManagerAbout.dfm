@@ -45,11 +45,11 @@ object AboutBox: TAboutBox
   object lbSpeicher1: TLabel
     Left = 304
     Top = 8
-    Width = 4
-    Height = 16
+    Width = 3
+    Height = 15
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -12
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -57,11 +57,11 @@ object AboutBox: TAboutBox
   object lbSpeicher2: TLabel
     Left = 304
     Top = 32
-    Width = 4
-    Height = 16
+    Width = 3
+    Height = 15
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -12
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -93,11 +93,11 @@ object AboutBox: TAboutBox
   object lbSpeicher4: TLabel
     Left = 304
     Top = 88
-    Width = 4
-    Height = 16
+    Width = 3
+    Height = 15
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -12
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -105,11 +105,11 @@ object AboutBox: TAboutBox
   object lbSpeicher5: TLabel
     Left = 304
     Top = 112
-    Width = 4
-    Height = 16
+    Width = 3
+    Height = 15
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -12
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -117,11 +117,11 @@ object AboutBox: TAboutBox
   object lbSpeicher7: TLabel
     Left = 304
     Top = 168
-    Width = 4
-    Height = 16
+    Width = 3
+    Height = 15
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -12
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -129,11 +129,11 @@ object AboutBox: TAboutBox
   object lbSpeicher8: TLabel
     Left = 304
     Top = 192
-    Width = 4
-    Height = 16
+    Width = 3
+    Height = 15
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -12
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -141,11 +141,11 @@ object AboutBox: TAboutBox
   object lbSpeicher3: TLabel
     Left = 304
     Top = 56
-    Width = 4
-    Height = 16
+    Width = 3
+    Height = 15
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -12
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -153,11 +153,11 @@ object AboutBox: TAboutBox
   object lbSpeicher6: TLabel
     Left = 304
     Top = 144
-    Width = 4
-    Height = 16
+    Width = 3
+    Height = 15
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -12
     Font.Name = 'Arial'
     Font.Style = []
     ParentFont = False
@@ -584,17 +584,17 @@ object AboutBox: TAboutBox
     object Version: TLabel
       Left = 88
       Top = 40
-      Width = 53
+      Width = 135
       Height = 13
-      Caption = 'Version 1.1'
+      Caption = 'Version 1.1.3.0 *Sky Edition*'
       IsControl = True
     end
     object Copyright: TLabel
       Left = 8
       Top = 80
-      Width = 121
+      Width = 124
       Height = 13
-      Caption = #169' 2004, 2005 by Chrissyx'
+      Caption = #169' 2004 - 2006 by Chrissyx'
       IsControl = True
     end
     object Comments: TLabel
@@ -609,19 +609,19 @@ object AboutBox: TAboutBox
     object Label1: TLabel
       Left = 8
       Top = 120
-      Width = 131
+      Width = 136
       Height = 13
       Cursor = crHandPoint
-      Caption = 'http://www.chrissyx.de(.vu)'
+      Caption = 'http://www.chrissyx.de(.vu)/'
       OnClick = Label1Click
     end
     object Label2: TLabel
       Left = 8
       Top = 136
-      Width = 118
+      Width = 123
       Height = 13
       Cursor = crHandPoint
-      Caption = 'http://www.chrissyx.com'
+      Caption = 'http://www.chrissyx.com/'
       OnClick = Label2Click
     end
     object Label3: TLabel
@@ -629,16 +629,16 @@ object AboutBox: TAboutBox
       Top = 56
       Width = 88
       Height = 13
-      Caption = 'Mit 53 Funktionen.'
+      Caption = 'Mit 55 Funktionen.'
       IsControl = True
     end
     object Label4: TLabel
       Left = 8
       Top = 152
-      Width = 161
+      Width = 166
       Height = 13
       Cursor = crHandPoint
-      Caption = 'http://www.mathe-manager.de.vu'
+      Caption = 'http://www.mathe-manager.de.vu/'
       OnClick = Label4Click
     end
   end

@@ -47,6 +47,7 @@ type
     MitdreiVariablen1: TMenuItem;
     Polynomdivision1: TMenuItem;
     Spende1: TMenuItem;
+    N1: TMenuItem;
     procedure Beenden1Click(Sender: TObject);
     procedure Info1Click(Sender: TObject);
     procedure VektorProdukt1Click(Sender: TObject);
@@ -83,7 +84,6 @@ var
   MatheManager: TMatheManager;
 
 implementation
-
 
 {$R *.dfm}
 
@@ -191,7 +191,8 @@ begin
    showmessage('Details über die Funktionen #2:' + char(13) +
    '-Länge einer Kreissehne' + char(13) +
    '-Diagonale2 eines Vierecks' + char(13) +
-   '-Erkennung der Vierecksart')// + char(13) +
+   '-Erkennung der Vierecksart' + char(13) +
+   '-Konvertieren in jedes beliebige Zahlensystem');// + char(13) +
 //   '-Polynomdivison');
 end;
 
@@ -244,7 +245,7 @@ begin
          //size := IdHTTP1.Response.ContentStream.Size / 1024;
          case Application.MessageBox('Es ist eine neuere Version verfügbar! Möchtest Du sie laden?', 'Updaten?', 36) of
          IDYES:
-         shellexecute(handle, 'open', PChar('http://www.chrissyx.com/daten/Mathe%20Manager.exe'), NIL, NIL, SW_SHOW);
+         ShellExecute(handle, 'open', 'http://www.chrissyx.com/daten/Mathe%20Manager.exe', NIL, NIL, SW_SHOW);
          end;
       end
       else Application.MessageBox('Es gibt keine neuere Version!', 'Hinweis', 64);
@@ -272,8 +273,7 @@ begin
    StatusBar1.SimpleText := 'Optionen...';
 end;
 
-procedure TMatheManager.onclosequery(Sender: TObject;
-  var CanClose: Boolean);
+procedure TMatheManager.onclosequery(Sender: TObject; var CanClose: Boolean);
 begin
    StatusBar1.SimpleText := 'Beende Programm...';
    if Optionen.CheckBox1.Checked then
@@ -301,7 +301,7 @@ end;
 procedure TMatheManager.Spende1Click(Sender: TObject);
 begin
    case Application.MessageBox('Dir gefällt das Programm? Du möchtest mich unterstützen? Dann kannst Du mir etwas spenden!', 'Spende?', 68) of
-   IDYES: shellexecute(handle, 'open', PChar('mailto:chrissyx@t-online.de?subject=SPENDE FÜR MATHE MANAGER'), NIL, NIL, SW_SHOW);
+   IDYES: ShellExecute(handle, 'open', 'mailto:chrissyx@t-online.de?subject=SPENDE FÜR MATHE MANAGER', NIL, NIL, SW_SHOW);
    end;
 end;
 

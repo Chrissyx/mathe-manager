@@ -2,18 +2,18 @@ object Optionen: TOptionen
   Left = 60
   Top = 110
   Width = 234
-  Height = 121
+  Height = 107
   Caption = 'Mathe Manager - Optionen'
   Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
+  Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
-  Font.Name = 'MS Sans Serif'
+  Font.Name = 'Arial'
   Font.Style = []
   OldCreateOrder = False
   OnClose = onclose
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 14
   object CheckBox1: TCheckBox
     Left = 24
     Top = 16
@@ -32,7 +32,7 @@ object Optionen: TOptionen
     Left = 24
     Top = 48
     Width = 177
-    Height = 41
+    Height = 25
     Caption = 'OK'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText

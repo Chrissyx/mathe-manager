@@ -25,7 +25,7 @@ function TBruchrechner.kgV (a, b :integer) :integer;
 var k: integer;
 begin
    k := a;
-   while k mod b <> 0 do k := k + a;
+   while (k mod b <> 0) do k := k + a;
    kgV := k;
 end;
 
